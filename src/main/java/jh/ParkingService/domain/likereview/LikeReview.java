@@ -14,13 +14,9 @@ public class LikeReview {
     @Column(name = "likeId")
     private String likeId;
 
-    @ManyToOne
-    @JoinColumn(name = "reviewUid")
     @Column(name = "likeReviewUid")
     private int likeReviewUid;
 
-    @ManyToOne
-    @JoinColumn(name = "uid")
     @Column(name = "likeUserUid")
     private String likeUserUid;
 
