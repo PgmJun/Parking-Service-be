@@ -1,4 +1,4 @@
-package jh.ParkingService.domain;
+package jh.ParkingService.domain.likereview;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,9 +14,13 @@ public class LikeReview {
     @Column(name = "likeId")
     private String likeId;
 
+    @ManyToOne
+    @JoinColumn(name = "reviewUid")
     @Column(name = "likeReviewUid")
     private int likeReviewUid;
 
+    @ManyToOne
+    @JoinColumn(name = "uid")
     @Column(name = "likeUserUid")
     private String likeUserUid;
 

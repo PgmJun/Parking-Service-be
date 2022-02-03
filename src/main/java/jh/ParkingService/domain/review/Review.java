@@ -1,4 +1,4 @@
-package jh.ParkingService.domain;
+package jh.ParkingService.domain.review;
 
 import lombok.*;
 
@@ -14,9 +14,13 @@ public class Review {
     @Column(name = "reviewUid") //리뷰 UID
     private int reviewUid;
 
+    @ManyToOne
+    @JoinColumn(name = "uid")
     @Column(name = "reviewerUid")   //리뷰어 UID
     private String reviewerUid;
 
+    @ManyToOne
+    @JoinColumn(name = "prkplceNo")
     @Column(name = "parkCode")  //주차장코드
     private String parkCode;
 

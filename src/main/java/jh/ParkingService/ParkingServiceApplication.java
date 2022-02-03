@@ -6,7 +6,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
-@ServletComponentScan
 @SpringBootApplication
 class ParkingServiceApplication {
 
